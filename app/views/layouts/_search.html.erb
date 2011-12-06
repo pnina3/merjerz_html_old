@@ -1,0 +1,7 @@
+<!--<input id="search_field" type=text class="text_inner"  value="Find information about Corporations and Deals"><input type=submit value="Search" class="submit">-->
+
+<%= form_tag search_path do %>
+
+      <%= search_field_tag :search, params[:search] ,:class="text_home" %>
+      <%= submit_tag :search, :name => nil %>
+ <% end %>

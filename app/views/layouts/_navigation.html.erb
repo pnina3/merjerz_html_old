@@ -1,0 +1,25 @@
+<nav>
+	<ul class="green_back">		
+				<%= link_to (write_path),:class=>"a_nav" do %>
+						<li id="write_nav" class="nav_item">Write</li>							
+				<% end %>
+				<li>|</li>
+				<%= link_to (how_it_works_path),:class=>"a_nav" do %>
+						<li id="works_nav" class="nav_item">How it works</li>
+				<% end %>
+				<li>|</li>
+				<%= link_to (corporations_path) do %>
+					<li id="corporation_nav" class="nav_item">Corporations</li>
+				<% end %>
+				<li>|</li>
+				<%= link_to (deals_path) do %>
+						<li id="deals_nav" class="nav_item">Deals</li>
+				<% end %>
+				<li>|</li>
+				<%= link_to (home_path) do %>
+						<li  class="home nav_item"><%=home%></li>
+				<% end %>		
+				<li>|</li>
+			
+		</ul>	
+</nav>

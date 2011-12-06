@@ -1,0 +1,38 @@
+
+<!-- **************************TABS***************************************************** -->					
+
+	<div id="tabs" class="deal_page">
+		<div class="add_container"><a title="Add Insights to this deal" class="gray_back add_butt">Add Insight</a></div>
+				 <ul>
+					<li><a href="#tabs-1">Reviews</a></li>
+					<li><a href="#tabs-2">Deals</a></li>
+					<li><a href="#tabs-3">Info</a></li>									
+				</ul>
+		 <div id="tabs-1" class="tabs_container"> 
+		 	<%=render :partial=> "reviews/review", :locals=>{:responses_text=>"2 Response",:responses_type=>"yes_responses"}%> <!-- show review content-->
+		 	<!--   ************************************* paiging ****************************************************    -->
+			<%=render :partial=> "layouts/paiging" %>
+		</div>	
+		 <div id="tabs-2" class="tabs_container secondary_tab "><!--show deals -->
+		 	<article class="tabs_display">
+				 <section class="deals_filter"">
+						<table>
+							<tr>
+								<%=render :partial=> "deals/deal" %>
+								<%=render :partial=> "deals/deal" %>
+							</tr>								
+						</table>
+				 </section>
+		   </article>		 	
+		 </div>
+		 <div id="tabs-3" class="tabs_container secondary_tab">
+		 	<article class="tabs_display corp_info">
+				<h1>Corporation  title</h1>
+				<p>Corporation  info</p>								  			
+			</article>
+		 </div>
+  </div>		 			
+
+
+							
+							

@@ -1,0 +1,70 @@
+	<div id="intro"></div>	<!--fix rails bug -->
+	<!-- ************************** SEARCH ***************************************************** -->
+	<div id="inner_header_big" class="light_gray_back">
+		<h1 id="top_header">Deals</h1>
+		 <%=render :partial=> "search/form" , :locals => { :header_name => 'text_inner' } %>										
+		 <div id="add_top" class="add_corporation">
+				<div class="circle left gray_back">+</div>
+					<a  href="#">Add a Deal</a>									
+				</div>
+		 </div>					
+		<div id="main_home" class="deal_nav">
+		<!-- ******************************** BREAD CRUMBS **********************************************-->
+		<div class="bread_crumbs"><a href="">Home</a> > <a href="#">Deals</a> > company A should buy Company B</div>
+		<!-- **************************DEAL HEADER***************************************************** -->				
+		<section id="deal_header">
+			<div class="comp">company A container</div>
+			<div  class="img"><%=should_buy_img%></div>
+			<div  class="comp">company B container</div>
+			<div style="clear: both;">	</div>	
+			<div class="review_box"><h1 class="left">Corporation A Should buy Corporation B</h1><div class="ratings_inner"></div></div>
+		</section>	
+		<div style="clear: both;">	</div>
+		<!-- **************************TABS***************************************************** -->					
+		<section id="deal_tabs">
+			 <%=render :partial=> "show_content_in_tabs" %>					
+		</section>
+		<!-- ************************************* competing deals ******************************************* -->
+		<!-- ************************************* competing deals ******************************************* -->
+							<section class="deals_filter bottom_padding">
+									<div class="level2_body"><div class="level2_header deals_fillter">Competing Deals</div></div>	
+									<table>
+										<tr>											
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<td>
+												<div id="altdeals_box">
+													<table>
+														<tr>
+															<td><h1>Alternate Deals</h1></td>
+														</tr>
+														<tr>
+															<td id="inner_explanation">
+																<p>Suggest another acquirer or target to this deal</p>
+																
+															</td>	
+														</tr>
+														<tr>
+															<td>
+																<a href="#" class="left">Suggest Alternate Acquirer</a><a class="help left hint">?</a>
+																<div class="tip_display hidden">
+																			Think you know<br> of a better Target for <br>this Acquirer? <br>Add it here. 
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<a href="#" class="left">Suggest Alternate Target</a><a class="help left hint">?</a>
+																<div class="tip_display hidden">
+																			Think you know<br>of a better Acquirer for <br>this Target? <br>Add it here.
+																</div>		
+															</td>	
+														</tr>
+													 </table>			
+												</div>
+											</td>
+										</tr>										
+									</table>
+								</section>
+							
+						

@@ -1,0 +1,60 @@
+<%= form_tag  do %>
+					<section id="buy_comps">
+							<div class="select_comp">
+									<label class="inner_header">Corporation name</label>
+									<input type=text>
+							</div>
+											<div class="left">
+												<%=should_buy_img%><br>
+												<span>Should buy</span>									
+											</div>
+											<div>
+												<label class="inner_header">Corporation name</label>
+												<input type=text>
+											</div>
+						</section>
+										<label class="inner_header">Description</label>
+										<textarea id="new_deal_general"></textarea>
+										<label class="inner_header">Ratings</label>
+										<div id="raitings_new">
+											<ul>
+												<li><label>Innovation:</label><div class="ratings_inner"></div></li>
+												<li><label>Integrity:</label><div class="ratings_inner"></div></li>
+												<li><label>Technology:</label><div class="ratings_inner"></div></li>
+												<li><label>Product quality:</label><div class="ratings_inner"></div></li>
+												<li><label>Service levels:</label><div class="ratings_inner"></div></li>
+											</ul>		
+										</div>
+										<div id="relationship">
+											<label class="inner_header">Relationship</label>
+											<div>Describe your relationship to the target corporation</div>
+											<input id="t_Investor" type="checkbox" name="option1" value="Investor"><label class="checkbox" for="t_Investor">Investor</label>
+											<input id="t_Customer" type="checkbox" name="option2" value="Customer"><label class="checkbox" for="t_Customer">Customer</label>
+											<input id="t_Partner" type="checkbox" name="option3" value="Partner"><label class="checkbox" for="t_Partner">Partner</label>
+											<input id="t_Supplier" type="checkbox" name="option4" value="Supplier"><label class="checkbox" for="t_Supplier">Supplier</label>
+											<input id="t_Employee" type="checkbox" name="option5" value="Employee"><label class="checkbox" for="t_Employee">Employee</label>
+											<input id="t_Ex employee" type="checkbox" name="option6" value="Ex employee"><label class="checkbox" for="t_Ex employee">Ex employee</label>
+											<input id="t_other" type="checkbox" name="option7" value="other"><label class="checkbox" for="other">other</label>
+											<br><br><br>
+											<div>Describe your relationship to the acquiring corporation</div>
+											<input id="Investor" type="checkbox" name="option1" value="Investor"><label class="checkbox" for="Investor">Investor</label>
+											<input id="Customer" type="checkbox" name="option2" value="Customer"><label class="checkbox" for="Customer">Customer</label>
+											<input id="Partner" type="checkbox" name="option3" value="Partner"><label class="checkbox" for="Partner">Partner</label>
+											<input id="Supplier" type="checkbox" name="option4" value="Supplier"><label class="checkbox" for="Supplier">Supplier</label>
+											<input id="Employee" type="checkbox" name="option5" value="Employee"><label class="checkbox" for="Employee">Employee</label>
+											<input id="Ex employee" type="checkbox" name="option6" value="Ex employee"><label class="checkbox" for="Ex employee">Ex employee</label>
+											<input id="other" type="checkbox" name="option7" value="other"><label class="checkbox" for="Other">other</label>
+										</div>
+										<label class="inner_header">Could you elaborate more about it?  (optional)</label>
+										<h4>Synergies  (cost , revenue )</h4>
+										<textarea id="new_deal_elaborate"></textarea>
+										<h4>Culture match</h4>
+										<textarea id="new_deal_elaborate"></textarea>
+										<h4>Enhancement of  product brand geography</h4>
+										<textarea id="new_deal_elaborate"></textarea>
+										<footer>
+											<%= submit_tag :search, :name => nil, :class=>"green_back submit", :value=>'Add Insight' %>
+										</footer>
+									</section>
+<% end %>									
+									

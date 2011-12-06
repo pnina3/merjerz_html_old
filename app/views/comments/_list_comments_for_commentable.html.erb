@@ -1,0 +1,20 @@
+<div class="article_responses hidden">
+		<div class="triangle_responses"></div>
+		<h2>Responses</h2><span class="plus">+ </span><a class="add_response_link">Add Response</a>
+		<div class="add_response hidden ">
+			<h1 class="left">Add Response</h1><a class="close left">x</a>
+			<%= form_tag  do %>
+				<%= text_area_tag :nil %>	
+				 <%= submit_tag :Add, :class=>"response_butt" %>		
+				<a class="cancel_link">Cancel</a>
+			<% end %>	
+		</div>
+		<div class="responses_body">
+			<div class="responses_avatar">
+				<img src="../assets/avatar.png" height="67" width="67">
+				<div class="member_name">Vadim Zeladorski</div>
+			</div>
+			<p>response text goes here bbbbbbbbbbb sit amet, mus odio enim orci, turpis purus pede donec. A nulla consequat proin quis, auctor purus urna eros urna, sed quis sociosqu eu auctor. Volutpat ornare in mi, nec in velit </p>	<time>24/11/11</time>
+		    <div style="clear: both;">	</div>
+		</div>
+</div>

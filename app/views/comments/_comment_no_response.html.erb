@@ -1,0 +1,13 @@
+<div class="article_responses hidden">
+		<div class="triangle_responses"></div>
+		<h2>Responses</h2><span class="plus">+ </span><a class="add_response_link">Add Response</a>
+		<div class="add_response">
+			<h1 class="left">Add Response</h1><a class="close left initial_response">x</a>
+			<%= form_tag  do %>
+			<%= text_area_tag :nil %>	
+			 <%= submit_tag :Add, :class=>"response_butt" %>		
+			<a class="cancel_link initial_response">Cancel</a>
+			<% end %>	
+		</div>
+	
+</div>

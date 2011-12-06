@@ -1,0 +1,54 @@
+<div id="intro"></div>	<!--fix rails bug --
+<!-- ************************** SEARCH ***************************************************** -->
+					<!-- ************************** SEARCH + INNER HEADER***************************************************** -->	    		
+						<div id="inner_header" class="light_gray_back">
+						
+						 <%=render :partial=> "search/form" , :locals => { :header_name => 'text_home' } %>	
+							
+						</div>	
+					<div id="main_home">
+						<!-- ******************************** BREAD CRUMBS **********************************************-->
+						<div class="bread_crumbs"><a href="">Home</a> > Deals</div>
+						<!-- **************************DEALS FILTERS***************************************************** -->				
+							<section class="deals_filter">
+										<div class="level2_body"><h1>Company A is mention in 2 Deal Insights</h1></div>	
+									<table>
+										<tr>
+											<td>
+												<div class="deals">
+													<div class="comp corp_up">Corporation A</div>
+													<div class="comp corp_down">Corporation B </div>													
+												</div>
+												<div class="deal_header">company A should buy company B</div>
+												<div class="ratings_deals"></div><div class="insights">Insights(12)</div>
+												<div class="search_text">This is the sentence where company A is mention This is the sentence where company A  is mention..</div>
+											</td>	
+											<td>
+												<div class="deals">
+													<div class="comp corp_up">Corporation A</div>
+													<div class="comp corp_down">Corporation B </div>													
+												</div>
+												<div class="deal_header">company A should buy company B</div>
+												<div class="ratings_deals"></div><div class="insights">Insights(12)</div>
+												<div class="search_text">This is the sentence where company A is mention This is the sentence where company A  is mention..</div>
+											</td>											
+										</tr>
+									</table>		
+								</section>
+								<section class="corp_filter">
+									<div class="level2_body"><h1>Company A is mention in 3 Corporation Reviews</h1></div>	
+									<table>
+										<tr>
+											<td>
+												<div class="corporations">
+													<div class="corporation_logo"></div>
+													<div class="corporation_header">company name</div>
+													<div class="ratings_corp"></div>
+													<div class="insights">Reviews(12)</div>	
+												</div>
+												<div class="search_text_corp">This is the sentence where company A is mention This is the sentence where company A  is mention..</div>
+											</td>
+										</tr>										
+									</table>
+								</section>
+						</div><!-- main home-->

@@ -1,0 +1,54 @@
+				
+						<div id="intro"></div>	<!--fix rails bug -->
+						<!-- ************************** SEARCH + INNER HEADER***************************************************** -->	    		
+						<div id="inner_header_big" class="light_gray_back">
+							<h1 id="top_header">Deals</h1>
+						 <%=render :partial=> "search/form" , :locals => { :header_name => 'text_inner' } %>	
+							<div id="add_top" class="add_deal">
+								<div class="circle left gray_back">+</div>
+									<a  href="#" class="add_deal">Add a Deal</a>									
+							</div>
+						</div>	
+								
+					<div id="main_home" class="deal_nav">
+						<!-- ******************************** BREAD CRUMBS **********************************************-->
+						<div class="bread_crumbs"><a href="">Home</a> > Deals</div>
+						<!-- **************************DEALS FILTERS***************************************************** -->				
+							<section class="deals_filter">
+									<div class="level2_body"><div class="level2_header deals_fillter">Top Rated</div></div>	
+									<table>
+										<tr>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+										</tr>										
+									</table>
+								</section>
+								<section class="deals_filter">		
+									<div class="level2_body"><div class="level2_header deals_fillter">Most Viewed</div></div>
+									<table>
+										<tr>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+										</tr>							
+									</table>																
+							     </section>
+							     <section class="last_filter deals_filter"">		
+									<div class="level2_body"><div class="level2_header deals_fillter">Recently Added</div></div>
+									<table>
+										<tr>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+										</tr>							
+									</table>																
+							     </section>
+							      <!-- ************************* ADD DEALS *********************************** -->
+								<section id="add_link">
+									<div id="add_top" class="add_deal">
+										<div class="circle left gray_back">+</div>
+										<a  href="#" class="add_deal">Add a Deal</a>									
+									</div>
+								</section>	
+						</div><!-- main home-->

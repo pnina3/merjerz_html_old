@@ -1,0 +1,154 @@
+
+  <!-- ************************** HOME INTRODUCTION ***************************************************** -->
+						<div id="intro">
+							<section id="main_intro">
+								<div class="main_introduction">Merjerz is the quick and easy way for all hi-tech professionals to discover, influence and connect tech corporations. To add your unique perspective, insight and experience just<a href="../html/signup.html"> Join Us</a></div>
+								<a class="intro_butt green_back">Find out more</a>
+							</section>
+							<section id="secondary_intro">
+								<h2>Deal Insights</h2>
+								<div class="s_text">Connect tech corporations with the best  people, technologies, and corporations<a href="#">more ></a></div>
+								<h2>Corporation Reviews</h2>
+								<div class="s_text">Educate the community about the pros and cons, potential, and value of tech corporations <a href="#">more ></a></div>
+							</section>
+								<div style="clear: both;">	</div>		
+						</div>	
+						<!-- ************************** SEARCH ***************************************************** -->
+						<div id="search" class="gray_back">
+							  <%=render :partial=> "search/form" , :locals => { :header_name => 'text_home' } %>					
+						</div>	
+						<div id="search_triangle"><div></div></div>				
+					<div id="main_home">
+						<!-- **************************TOP DEALS***************************************************** -->				
+							<section class="deals_filter">
+									<div class="level2_body"><div class="level2_header top_deals">Top Deals</div></div>	
+									<table>
+										<tr>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+										</tr>
+										<tr>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+											<%=render :partial=> "deals/deal" %>
+										</tr>
+									</table>																
+							</section>
+							<!-- ***********************TOP CORPORATIONS REVIEWS************************************************ -->
+							<section>	
+									<div class="level2_body"><div class="level2_header top_corporations">Top corporation reviews</div></div>
+									<article>
+											<header>Company Name</header>
+											<section class="avatar_wrapper">
+												<a href="profile.html"><%=avatar_img%></a>
+												<a href="profile.html" class="member_name">Alexander Donelevitchyy</a>
+											</section>
+											 <section class="article_body">
+												<header>
+													<div class="article_title">Title review goes hrere</div>
+																<div class="article_ratings">
+																	<div class="ratings_corp"></div><a class="hint m_raitings">More</a> <%=raiting_triangle_img%>
+																</div>
+																	<!-- tooltip element -->
+																		<div class="tip_display hidden">
+																			<div class="tootltip_wrapper">
+																					more raitings will come here bla bla<br>
+																					kjhkjhkjhkj<br>
+																					66666666666
+																					<div>uuuuuuuuuuuu</div>
+																			</div>		
+																		</div>		
+																
+												</header>
+												<p>Lorem ipsum dolor sit amet, mus odio enim orci, turpis purus pede donec. A nulla consequat proin quis, auctor purus urna eros urna, sed quis sociosqu eu auctor. Volutpat ornare in mi, nec in velit magna, varius ac quis duis. Felis imperdiet et u</p><span class="dots">...</span>												
+												<time>24/11/11</time>									
+												<!-- *********************** ARTICLE FOOTER *******************  -->	
+												<footer>
+													<div class="read_more"><a href="../html/corporation_page.html">Read More</a><div class="triangle_down"></div></div>					
+													<div class="responses"><%=responses_img%>2 responses</div>
+												</footer>
+											</section>
+											<!-- *********************** ARTICLE CORPORATION LOGO *******************  -->	
+											<section class="comp_logo"><div class="comp">corporation logo</div></section>	
+											<div style="clear: both;">	</div>				
+									</article>
+									
+								
+							</section>	
+							<!-- ***********************MEMBERS************************************************ -->
+							<section id="members" class="gray_back">
+								<!-- **************** TOP RANKED ************************* -->
+								<div class="member_section">
+									<div class="members_title">Top ranked members</div>
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="profile.html">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>			 
+									
+									<!-- member number 2-->	
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="profile.html">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>		
+								</div>
+								<!-- **************** MOST ACTIVE ************************* -->
+								<div class="member_section center">
+									<div class="members_title">Most active members</div>
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="profile.html">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>			 									
+									<!-- member number 2-->	
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="profile.html">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>										
+								</div>
+								<!-- **************** NEW ACTIVE ************************* -->
+								<div class="member_section last">
+									<div class="members_title">New members</div>
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="profile.html">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>			 
+									
+									<!-- member number 2-->	
+									<div class="topMembers_avatar">
+										<a href="profile.html"><%=avatar_img%></a>
+									</div>
+									<a class="member_name" href="#">Boris Andy</a>
+									<div class="full_avatar">
+										<div>Reputation <span class="bold_big">300</span></div>
+										<div>Followers 100</div>
+									</div>	
+									<div style="clear: both;">	</div>	
+								</div>
+								<div style="clear: both;">	</div>	
+							</section>	
+						</div><!-- main home-->

@@ -1,0 +1,7 @@
+
+<%= form_tag search_path do %>
+
+      <%= search_field_tag :search, params[:search] ,:class=>header_name, :id=>'search_field',:value=>"Find information about Corporations and Deals"%>
+      <%= submit_tag :search, :name => nil, :class=>"submit" %>
+     
+ <% end %>

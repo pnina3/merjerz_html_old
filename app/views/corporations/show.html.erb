@@ -1,0 +1,38 @@
+	<div id="intro"></div>	<!--fix rails bug -->
+	<!-- ************************** SEARCH ***************************************************** -->
+	<div id="inner_header_big" class="light_gray_back">
+		<h1 id="top_header">Corporations</h1>
+		 <%=render :partial=> "search/form" , :locals => { :header_name => 'text_inner' } %>										
+		 <div id="add_top" class="add_corporation">
+				<div class="circle left gray_back">+</div>
+					<a  href="#">Add Corporation Review</a>									
+				</div>
+		 </div>					
+		<div id="main_home" class="corp_nav">
+		<!-- ******************************** BREAD CRUMBS **********************************************-->
+		<div class="bread_crumbs"><a href="">Home</a> > <a href="#">Deals</a> > company A should buy Company B</div>
+		<!-- **************************DEAL HEADER***************************************************** -->				
+		<section id="deal_header">
+			<div class="comp">company A container</div>						
+			<div style="clear: both;">	</div>	
+			<div class="review_box"><h1 class="left">Company A Review</h1><div class="ratings_inner"></div></div>
+		</section>	
+		<div style="clear: both;">	</div>
+		<!-- **************************TABS***************************************************** -->					
+		<section id="deal_tabs">
+			 <%=render :partial=> "show_content_in_tabs" %>					
+		</section>
+		<!-- ************************************* competing deals ******************************************* -->
+		<section  class="corp_filter bottom_padding">
+			<div class="level2_body"><h1>other Corporations that may interest you</h1></div>	
+				<table>
+					 <tr>
+						<%=render :partial=> "corporations/corporation" %>
+						<%=render :partial=> "corporations/corporation" %>
+						<%=render :partial=> "corporations/corporation" %>
+						<%=render :partial=> "corporations/corporation" %>					
+					 </tr>										
+				</table>				
+		</section>
+							
+						

@@ -1,0 +1,53 @@
+<article class="tabs_display">
+	<section class="avatar_wrapper">
+			<a href="#"><img src="../assets/avatar.png" height="67" width="67"></a>
+			<a href="#" class="member_name">Alexander Donelevitchyy</a>
+			<div class="full_avatar">
+				<div>Reputation <span class="bold_big">300</span></div>
+				<div>Followers 100</div>
+				<div>Following 200</div>	
+				<a class="green_back follow_me">Follow</a>												
+			</div>
+	</section>
+	<section class="article_body">
+		<header>
+			<div class="article_title">Title review goes hrere</div>
+			<div class="article_ratings">
+				<div class="ratings_corp"></div><a class="hint m_raitings">More</a> <%= raiting_triangle_img %>
+				<div class="like_bar">
+						<div class="likebar_item text">10 of 12 people found this helpful</div>
+						<div class="likebar_item"><img src="../assets/like_bar.png"></div>
+				</div>
+				<div style="clear: both;">	</div>	
+			</div>
+			<!-- tooltip element -->
+			<div class="tip_display hidden">
+				more raitings will come here bla bla<br>
+				kjhkjhkjhkj
+			</div>		
+		</header>
+		<p>Lorem ipsum dolor sit amet, mus odio enim orci, turpis purus pede donec. A nulla consequat proin quis, auctor purus urna eros urna, sed quis sociosqu eu auctor. Volutpat ornare in mi, nec in velit magna, varius ac quis duis. Felis imperdiet et u
+		Lorem ipsum dolor sit amet, mus odio enim orci, turpis purus pede donec. A nulla consequat proin quis, auctor purus urna eros urna, sed quis sociosqu eu auctor. Volutpat ornare in mi, nec in velit magna, varius ac quis duis. Felis imperdiet et uLorem ipsum dolor sit amet, mus odio enim orci, turpis purus pede donec. A nulla consequat proin quis, auctor purus urna eros urna, sed quis sociosqu eu auctor. Volutpat ornare in mi, nec in velit magna, varius ac quis duis. Felis imperdiet et u</p>
+		<time>24/11/11</time>
+		<div class="relationship">
+			<h1>relationship to this corporation:</h1><span>Customer</span>
+		</div>	
+		<!-- *********************** ARTICLE RESPONSES SECTION *******************  -->
+				<% if responses_type=="no_responses"%>
+					<%= render :partial=> "comments/comment_no_response" %>	<!-- if this is a review without responses -->
+				<% else%>
+					<%= render :partial=> "comments/list_comments_for_commentable" %>	<!-- if this is a review with responses -->
+				<% end %>	
+			<!-- *********************** ARTICLE FOOTER *******************  -->	
+			<footer>				
+					<div class="responses"><%= responses_img %><a><%=responses_text%></a></div>
+					<div class="like">
+							<p>Was this Insight helpful to you?</p>
+							<%=like_img%><a href="#">Yes</a>
+							<%=dislike_img%><a href="#">No</a>
+					</div>														
+			</footer>
+													
+		</section>
+		<div style="clear: both;">	</div>				
+	</article>												
